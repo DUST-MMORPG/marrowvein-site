@@ -192,7 +192,7 @@ section { padding: 5.5rem 0; }
 /* features */
 .features {
   display: grid; gap: 1.1rem;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   list-style: none; margin: 0; padding: 0;
 }
 .feature {
@@ -255,10 +255,9 @@ section { padding: 5.5rem 0; }
 .doc p { color: var(--muted); }
 
 /* ---------- Responsive ---------- */
-@media (max-width: 1100px) {
-  .features { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
 @media (max-width: 920px) {
+  .features { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .feature:last-child:nth-child(odd) { grid-column: 1 / -1; }   /* 9 cards: last one spans the row */
   .pitch { grid-template-columns: 1fr; gap: 2rem; }
 }
 @media (max-width: 640px) {
