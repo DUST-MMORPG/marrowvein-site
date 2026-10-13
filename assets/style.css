@@ -192,6 +192,9 @@ section { padding: 5.5rem 0; }
 .facts span:last-child { text-align: right; color: #f0eaf7; }
 
 /* features */
+.feature-group { margin: 0 0 2.4rem; }
+.feature-group:last-of-type { margin-bottom: 0; }
+.feature-group > .eyebrow { margin-bottom: 1rem; }
 .features {
   display: grid; gap: 1.1rem;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -259,7 +262,6 @@ section { padding: 5.5rem 0; }
 /* ---------- Responsive ---------- */
 @media (max-width: 920px) {
   .features { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .feature:last-child:nth-child(odd) { grid-column: 1 / -1; }   /* 9 cards: last one spans the row */
   .pitch { grid-template-columns: 1fr; gap: 2rem; }
 }
 @media (max-width: 640px) {
