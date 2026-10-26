@@ -365,3 +365,7 @@ body.has-theme-player { padding-bottom: 4.5rem; }
 }
 @media (max-width: 360px) { .theme-player .tp-title { display: none; } }
 @media (prefers-reduced-motion: reduce) { .theme-player.is-playing .tp-note { animation: none; } }
+
+.handle a { color: inherit; text-decoration: none; }
+.handle a:hover { color: var(--accent); }
+.follow-grid .card .btn { margin-top: .5rem; }
